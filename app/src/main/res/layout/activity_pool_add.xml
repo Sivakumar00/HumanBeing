@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="siva.com.weengineers.PoolAdd">
+
+    <include
+        android:id="@+id/pool_add_appBar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName|phone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/pool_add_appBar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true" />
+
+
+    <fragment
+        android:id="@+id/places_sources"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/edtPhone"
+        android:layout_alignParentEnd="true" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/fare"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <fragment
+        android:id="@+id/places_target"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/places_sources"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="false"
+        android:background="@color/colorAccent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_sources"
+        android:layout_alignTop="@+id/places_sources"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        android:layout_alignTop="@+id/places_target"
+        android:layout_alignStart="@+id/fare" />
+
+    <EditText
+        android:id="@+id/fare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Fare"
+        android:inputType="number"
+        android:layout_below="@+id/places_target"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

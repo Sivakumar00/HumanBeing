@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/background"
+    android:weightSum="10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_layout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/message_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/message_profile_layout"
+        android:background="@drawable/message_text_background"
+        android:padding="8dp"
+        android:text="Message Text"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

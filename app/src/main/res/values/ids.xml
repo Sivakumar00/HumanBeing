@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="reg_create_btn" type="id">create_btn</item>
+    <item name="login_toolbar" type="id" />
+    <item name="login_email" type="id" />
+</resources>

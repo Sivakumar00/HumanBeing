@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="siva.com.weengineers.RegisterActivity">
+
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/reg_display_name"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="42dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:hint="@string/user_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_email"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/reg_display_name"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="111dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:fontFamily="casual"
+            android:hint="@string/email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/reg_password"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/login_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="177dp">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/reg_create_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reg_password"
+        android:layout_below="@+id/reg_password"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/create_a_new_account"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reg_display_name"
+        android:layout_below="@+id/login_toolbar"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="54dp"
+        android:fontFamily="casual"
+        android:text="Create a New Account"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relativeLayout4" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/background"
+        android:layout_alignParentStart="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/single_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/default_avatar"
+            app:srcCompat="@drawable/default_avatar" />
+        <TextView android:textSize="13dp" android:textColor="#000000" android:id="@+id/single_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How you doing...!!!"
+            android:lineSpacingExtra="12dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignBottom="@+id/single_image"
+            android:layout_toEndOf="@+id/single_image" />
+        <RelativeLayout android:id="@+id/relativeLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/single_msg" android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/single_seen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_toStartOf="@+id/single_time"
+                android:text="msg"
+                android:textSize="9sp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/single_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="35dp"
+                android:text="12:00 AM"
+                android:textSize="9sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:text="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

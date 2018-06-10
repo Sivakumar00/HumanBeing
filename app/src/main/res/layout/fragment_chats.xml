@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chats_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/no_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/no_chats_kindly_visit_to_settings_all_users_you_can_find_your_friends"
+        android:textSize="18sp" />
+
+</FrameLayout>

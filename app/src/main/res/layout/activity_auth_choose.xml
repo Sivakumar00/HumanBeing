@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="siva.com.weengineers.AuthChooseActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/choose_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp">
+
+        <RadioButton
+            android:id="@+id/passcodeLock"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_marginLeft="20dp"
+            android:text="Passcode Lock" />
+
+        <RadioButton
+            android:id="@+id/fingerprintLock"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Fingerprint Lock" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="86dp"
+        android:layout_marginEnd="65dp"
+        android:background="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/choose_toolbar"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="19dp"
+        android:text="Choose any one of the Lock:"
+        android:textSize="18sp" />
+
+</RelativeLayout>

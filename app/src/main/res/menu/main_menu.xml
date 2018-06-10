@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/blood"
+        android:icon="@drawable/blood_icon"
+        android:title="blood donors"
+        android:visible="true"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action"
+        android:icon="@drawable/ic_hot"
+        android:title="news"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_pool"
+        android:icon="@drawable/ic_car_pool"
+        android:title="Vehicle Pooling"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/main_settings"
+        android:title="@string/account_settings" />
+    <item
+        android:id="@+id/main_all_btn"
+        android:title="@string/all_users" />
+
+    <item
+        android:id="@+id/main_logout_btn"
+        android:title="@string/log_out" />
+
+
+</menu>

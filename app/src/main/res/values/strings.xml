@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">We Engineers</string>
+    <string name="mainpage">Mainpage</string>
+    <string name="need_new_account">NEED NEW ACCOUNT</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_a_new_account">CREATE A NEW ACCOUNT</string>
+    <string name="auth_failed">authentication failed</string>
+    <string name="log_out">Log Out</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="all_users">All Users</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi_there_i_am_using_we_engineers">Hi, there i am using We Engineers.!</string>
+    <string name="display_name">DISPLAY NAME</string>
+    <string name="change_profile_photo">CHANGE PROFILE PHOTO</string>
+    <string name="change_status">CHANGE STATUS</string>
+    <string name="be_b_tech">BE / B.Tech</string>
+    <string name="studying">Studying</string>
+    <string name="working_at">Working at</string>
+    <string name="vip">VIP</string>
+    <string name="change_status1">CHANGE STATUS</string>
+    <string name="update_status">Update Status</string>
+    <string name="default_status">Hi, I am Engineer</string>
+    <string name="no_chats_kindly_visit_to_settings_all_users_you_can_find_your_friends"><![CDATA[No Chats.. Kindly Visit to Settings -> All Users. You can find your friends.]]></string>
+    <string name="no_friend_request">No Friend Request..</string>
+    <string name="title_activity_driver_track">Map</string>
+    <string name="admob_app_id">ca-app-pub-4171784155770462~4120646094</string>
+
+    <string name="banner_home_footer">ca-app-pub-4171784155770462/9206996407</string>
+
+
+</resources>
