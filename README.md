@@ -1,5 +1,6 @@
 # HumanBeing
 ## It is an android chat application using firebase with various features.
+## This is my basic project without any Architecture (yet to settle it into MVC)
 
 <p align="center">
   <img src="https://github.com/Sivakumar00/HumanBeing/blob/master/logo_mod.png" width="500">
